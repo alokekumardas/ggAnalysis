@@ -1,0 +1,678 @@
+EgammaPostRecoTools: Fall17V2 electron modules not found, running ID without them. If you want Fall17V2 IDs, please merge the approprate PR
+EgammaPostRecoTools: Fall17V2 photons modules not found, running ID without them. If you want Fall17V2 IDs, please merge the approprate PR
+DEBUG 2018-11-10 02:50:00,709: 	 Executing command: 'submit'
+DEBUG 2018-11-10 02:50:00,741: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-10 02:50:00,758: 	 Checking credentials
+DEBUG 2018-11-10 02:50:00,758: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-10 02:50:00,758: 	 Getting proxy life time left
+DEBUG 2018-11-10 02:50:00,962: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 34877
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:01,065: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 34876
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:01,065: 	 Proxy valid for 09:41:17 hours
+DEBUG 2018-11-10 02:50:01,066: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-11-10 02:50:01,476: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:01,476: 	 Checking credentials
+DEBUG 2018-11-10 02:50:01,476: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-10 02:50:01,476: 	 Getting proxy life time left
+DEBUG 2018-11-10 02:50:01,579: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 34876
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:01,683: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 34876
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:01,683: 	 Proxy valid for 09:41:16 hours
+DEBUG 2018-11-10 02:50:01,787: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u54554 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:07,424: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-10 02:50:07,533: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:07,533: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-10 02:50:07,533: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-10 02:50:09,741: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 609:34:09  (25.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-10 02:50:09,743: 	 Myproxy is valid: 2194449
+DEBUG 2018-11-10 02:50:09,743: 	 Command use: submit
+DEBUG 2018-11-10 02:50:09,743: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x7f12cc55db10>]
+DEBUG 2018-11-10 02:50:11,669: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-10 02:50:11,669: 	 Instance is prod
+DEBUG 2018-11-10 02:50:11,669: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-10 02:50:11,669: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-10 02:50:11,669: 	 Started submission
+DEBUG 2018-11-10 02:50:11,669: 	 Working on /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-10 02:50:13,460: 	 Loading required information from the environment
+DEBUG 2018-11-10 02:50:13,460: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-11-10 02:50:13,460: 	 Loading required information from the environment
+DEBUG 2018-11-10 02:50:13,460: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-11-10 02:50:13,492: 	 UNIQUE NAME: tarUUID b8a47fbb-5c33-44e2-8c90-9ae55bf6d538 
+DEBUG 2018-11-10 02:50:13,492: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = False
+config.General.workArea = 'crab_projects_ntuples'
+config.General.requestName = 'job_Feb17_ggntuples_ZJets1'
+config.section_('JobType')
+config.JobType.psetName = '/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.sendExternalFolder = True
+config.section_('Data')
+config.Data.inputDataset = '/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM'
+config.Data.publication = False
+config.Data.unitsPerJob = 20
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outLFNDirBase = '/store/user/aldas/2017_gg/TTGamma'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T2_IN_TIFR'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2018-11-10 02:50:13,492: 	 self.config.JobType.psetName: /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py
+INFO 2018-11-10 02:50:13,493: 	 Importing CMSSW configuration /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py
+INFO 2018-11-10 02:50:18,163: 	 Finished importing CMSSW configuration /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py
+DEBUG 2018-11-10 02:50:18,163: 	 Writing CMSSW configuration to /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/inputs/PSet.py
+DEBUG 2018-11-10 02:50:19,385: 	 The following EDM output files will be collected: []
+DEBUG 2018-11-10 02:50:19,386: 	 The following TFile output files will be collected: ['ZJets1_ggtree_mc.root']
+DEBUG 2018-11-10 02:50:19,386: 	 The following user output files will be collected: []
+DEBUG 2018-11-10 02:50:19,386: 	 Loading required information from the environment
+DEBUG 2018-11-10 02:50:19,386: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-11-10 02:50:19,386: 	 Making tarball in /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/inputs/b8a47fbb-5c33-44e2-8c90-9ae55bf6d538default.tgz
+DEBUG 2018-11-10 02:50:19,539: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/lib
+DEBUG 2018-11-10 02:50:19,539: 	 Adding directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/lib to tarball
+DEBUG 2018-11-10 02:50:22,512: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/biglib
+DEBUG 2018-11-10 02:50:22,512: 	 Adding directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/biglib to tarball
+DEBUG 2018-11-10 02:50:22,514: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/module
+DEBUG 2018-11-10 02:50:22,514: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/external
+DEBUG 2018-11-10 02:50:22,514: 	 Adding directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/external to tarball
+DEBUG 2018-11-10 02:50:25,814: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2018-11-10 02:50:25,854: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2018-11-10 02:50:25,899: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoEgamma/EgammaPhotonProducers/interface to tarball
+DEBUG 2018-11-10 02:50:25,923: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/CommonTools/ParticleFlow/interface to tarball
+DEBUG 2018-11-10 02:50:25,967: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/Configuration/PyReleaseValidation/data to tarball
+DEBUG 2018-11-10 02:50:25,978: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/JetMETCorrections/Type1MET/data to tarball
+DEBUG 2018-11-10 02:50:25,984: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/JetMETCorrections/Type1MET/interface to tarball
+DEBUG 2018-11-10 02:50:26,002: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/NanoAOD/interface to tarball
+DEBUG 2018-11-10 02:50:26,011: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/PatAlgos/interface to tarball
+DEBUG 2018-11-10 02:50:26,097: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/PatUtils/data to tarball
+DEBUG 2018-11-10 02:50:26,469: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/PatUtils/interface to tarball
+DEBUG 2018-11-10 02:50:26,543: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoMET/METFilters/data to tarball
+DEBUG 2018-11-10 02:50:26,546: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoMET/METFilters/interface to tarball
+DEBUG 2018-11-10 02:50:26,579: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/HiggsAnalysis/HiggsTo2photons/interface to tarball
+DEBUG 2018-11-10 02:50:26,593: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/interface to tarball
+DEBUG 2018-11-10 02:50:26,982: 	 Uploading archive /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/inputs/b8a47fbb-5c33-44e2-8c90-9ae55bf6d538default.tgz (8.416992.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-11-10 02:50:34,887: 	 Loading required information from the environment
+DEBUG 2018-11-10 02:50:34,887: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-11-10 02:50:34,887: 	 Making tarball in /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/inputs/debugFiles.tgz
+DEBUG 2018-11-10 02:50:34,909: 	 Uploading archive /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-11-10 02:50:36,487: 	 Result uploading input files: 0dbcda73c561abb6ab2d353795d4b9f956c008a1db1a532439de2512e682e52c.tar.gz 
+INFO 2018-11-10 02:50:36,488: 	 Sending the request to the server
+DEBUG 2018-11-10 02:50:36,488: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_IN_TIFR', 'algoargs': 20, 'cachefilename': '0dbcda73c561abb6ab2d353795d4b9f956c008a1db1a532439de2512e682e52c.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_4_9_cand2', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', 'lfn': '/store/user/aldas/2017_gg/TTGamma', 'dryrun': 0, 'workflow': 'crab_job_Feb17_ggntuples_ZJets1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['ZJets1_ggtree_mc.root'], 'oneEventMode': 0, 'debugfilename': 'a8c20cd7233a7dd3597aff461252d557ee7fabab0483fb50ce28d6e6164b7428.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': ''} 
+DEBUG 2018-11-10 02:50:36,488: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_IN_TIFR&algoargs=20&cachefilename=0dbcda73c561abb6ab2d353795d4b9f956c008a1db1a532439de2512e682e52c.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_4_9_cand2&primarydataset=&inputdata=%2FDYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8%2FRunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Faldas%2F2017_gg%2FTTGamma&dryrun=0&workflow=crab_job_Feb17_ggntuples_ZJets1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=a8c20cd7233a7dd3597aff461252d557ee7fabab0483fb50ce28d6e6164b7428.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc630&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=&tfileoutfiles=ZJets1_ggtree_mc.root
+DEBUG 2018-11-10 02:50:38,626: 	 Result: {u'result': [{u'RequestName': u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1'}]}
+INFO 2018-11-10 02:50:38,657: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-11-10 02:50:38,657: 	 Task name: 181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-10 02:50:38,657: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2018-11-10 02:50:38,658: 	 About to return
+DEBUG 2018-11-11 04:10:23,819: 	 Executing command: 'resubmit'
+DEBUG 2018-11-11 04:10:23,819: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-11 04:10:23,849: 	 Checking credentials
+DEBUG 2018-11-11 04:10:23,849: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-11 04:10:23,849: 	 Getting proxy life time left
+DEBUG 2018-11-11 04:10:23,952: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 29251
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:24,054: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 29251
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:24,054: 	 Proxy valid for 08:07:31 hours
+DEBUG 2018-11-11 04:10:24,163: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:24,163: 	 Checking credentials
+DEBUG 2018-11-11 04:10:24,163: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-11 04:10:24,163: 	 Getting proxy life time left
+DEBUG 2018-11-11 04:10:24,266: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 29250
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:24,368: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 29250
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:24,369: 	 Proxy valid for 08:07:30 hours
+DEBUG 2018-11-11 04:10:25,953: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-11 04:10:26,059: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:26,059: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-11 04:10:26,059: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-11 04:10:26,864: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 584:13:52  (24.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:26,865: 	 Myproxy is valid: 2103232
+DEBUG 2018-11-11 04:10:26,865: 	 Command use: resubmit
+DEBUG 2018-11-11 04:10:26,865: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1']
+DEBUG 2018-11-11 04:10:28,495: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-11 04:10:28,495: 	 Instance is prod
+DEBUG 2018-11-11 04:10:28,495: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-11 04:10:28,495: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-11 04:10:28,495: 	 Executing command: 'status'
+DEBUG 2018-11-11 04:10:28,497: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-11 04:10:28,593: 	 Checking credentials
+DEBUG 2018-11-11 04:10:28,593: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-11 04:10:28,593: 	 Getting proxy life time left
+DEBUG 2018-11-11 04:10:28,695: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 29246
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:28,798: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 29246
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:28,798: 	 Proxy valid for 08:07:26 hours
+DEBUG 2018-11-11 04:10:28,911: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:28,911: 	 Checking credentials
+DEBUG 2018-11-11 04:10:28,911: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-11 04:10:28,911: 	 Getting proxy life time left
+DEBUG 2018-11-11 04:10:29,015: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 29246
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:29,119: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 29245
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:29,119: 	 Proxy valid for 08:07:26 hours
+DEBUG 2018-11-11 04:10:30,675: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-11 04:10:30,780: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:30,781: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-11 04:10:30,781: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-11 04:10:31,584: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 584:13:47  (24.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-11 04:10:31,585: 	 Myproxy is valid: 2103227
+DEBUG 2018-11-11 04:10:31,585: 	 Command use: status
+DEBUG 2018-11-11 04:10:31,585: 	 Options use: []
+DEBUG 2018-11-11 04:10:33,095: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-11 04:10:33,095: 	 Instance is prod
+DEBUG 2018-11-11 04:10:33,095: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-11 04:10:33,095: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-11 04:10:34,616: 	 Got information from server oracle database: {u'result': [u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-11-10 08:50:38.565389', u'None', u'2018-11-10 08:51:37.464446', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'0dbcda73c561abb6ab2d353795d4b9f956c008a1db1a532439de2512e682e52c.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_ZJets1-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['ZJets1_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0107.cern.ch/mon/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0107.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8', u'None', u'a8c20cd7233a7dd3597aff461252d557ee7fabab0483fb50ce28d6e6164b7428.tar.gz', u'30324941', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-11-11 04:10:34,616: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-11 04:10:34,616: 	 Task name:			181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-11 04:10:34,618: 	 Grid scheduler - Task Worker:	crab3@vocms0107.cern.ch - crab-prod-tw01
+INFO 2018-11-11 04:10:34,618: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-11-11 04:10:34,618: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-11 04:10:34,618: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-11 04:10:34,618: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 30324941)
+DEBUG 2018-11-11 04:10:34,618: 	 Webdir is located at http://vocms0107.cern.ch/mon/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-11 04:10:36,107: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0107/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-11 04:10:36,107: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0107/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1/status_cache
+DEBUG 2018-11-11 04:10:38,943: 	 Got information from status cache file: {'11': {'Retries': 2, 'WallDurations': [9.0, 15549.0, 726.0, 9.0, 24785.0], 'StartTimes': [1541840098.0, 1541855833.0, 1541856878.0], 'SubmitTimes': [1541839910.0, 1541855712.0, 1541856688.0], 'JobIds': ['30324954.0', '30329326.0', '30329954.0'], 'EndTimes': [1541855647.0, 1541856559.0, 1541881663.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1129368, 598376, 1158584], 'TotalUserCpuTimeHistory': [8019, 26, 23286], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [139, 3, 653]}, '10': {'Retries': 1, 'WallDurations': [14.0, 42916.0, 8.0, 32534.0], 'StartTimes': [1541840123.0, 1541883223.0], 'SubmitTimes': [1541839910.0, 1541883111.0], 'JobIds': ['30324953.0', '30348208.0'], 'EndTimes': [1541883039.0, 1541915757.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [1085820, 1329800], 'TotalUserCpuTimeHistory': [19282, 27657], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T1_UK_RAL'], 'TotalSysCpuTimeHistory': [3920, 1049]}, '13': {'Retries': 0, 'WallDurations': [8.0, 14301.0, 15793.0, 33757.0], 'StartTimes': [1541840090.0, 1541854571.0, 1541870543.0], 'SubmitTimes': [1541839910.0, -1, -1], 'JobIds': ['30324956.0', '30324956.0', '30324956.0'], 'EndTimes': [1541854391.0, 1541870364.0, 1541904300.0], 'Restarts': 2, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [1174804, 0, 1250000], 'TotalUserCpuTimeHistory': [8824.0, 0.0, 27233], 'SiteHistory': ['Unknown', 'T2_US_Nebraska', 'T2_AT_Vienna', 'T1_UK_RAL'], 'TotalSysCpuTimeHistory': [168.0, 0.0, 1165]}, '12': {'Retries': 0, 'WallDurations': [9.0, 67027.0], 'StartTimes': [1541840112.0], 'SubmitTimes': [1541839910.0], 'JobIds': ['30324955.0'], 'TotalUserCpuTimeHistory': [18079.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1128060], 'Error': [50664, 'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}], 'SiteHistory': ['Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [702.0]}, '15': {'Retries': 2, 'WallDurations': [8.0, 23492.0, 8.0, 1646.0, 55736.0], 'StartTimes': [1541840098.0, 1541863864.0, 1541865769.0], 'SubmitTimes': [1541839910.0, 1541863655.0, 1541865639.0], 'JobIds': ['30324957.0', '30336799.0', '30337719.0'], 'EndTimes': [1541863590.0, 1541865510.0, 1541921505.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1111372, 1104788, 1143604], 'TotalUserCpuTimeHistory': [12295, 712, 29189], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [232, 23, 542]}, '14': {'Retries': 1, 'WallDurations': [8.0, 21985.0, 9.0, 20546.0], 'StartTimes': [1541840098.0, 1541862383.0], 'SubmitTimes': [1541839910.0, 1541862154.0], 'JobIds': ['30324958.0', '30335319.0'], 'EndTimes': [1541862083.0, 1541882929.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1174172, 1239900], 'TotalUserCpuTimeHistory': [9922, 19315], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [221, 522]}, '16': {'Retries': 1, 'WallDurations': [8.0, 9199.0, 8009.0], 'StartTimes': [1541840093.0, 1541849450.0], 'SubmitTimes': [1541839910.0, 1541849362.0], 'JobIds': ['30324959.0', '30328025.0'], 'EndTimes': [1541849292.0, 1541857459.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1108152, 1065548], 'TotalUserCpuTimeHistory': [5697, 7600], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [142, 123]}, '1': {'Retries': 1, 'WallDurations': [9.0, 8988.0, 8.0, 34752.0], 'StartTimes': [1541840092.0, 1541849293.0], 'SubmitTimes': [1541839908.0, 1541849145.0], 'JobIds': ['30324944.0', '30327916.0'], 'EndTimes': [1541849080.0, 1541884045.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1113360, 1135456], 'TotalUserCpuTimeHistory': [4559, 30775], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [97, 430]}, '3': {'Retries': 1, 'WallDurations': [8.0, 746.0, 23714.0], 'StartTimes': [1541840098.0, 1541841145.0], 'SubmitTimes': [1541839909.0, 1541840913.0], 'JobIds': ['30324947.0', '30325269.0'], 'EndTimes': [1541840844.0, 1541864859.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1177376, 1233180], 'TotalUserCpuTimeHistory': [449, 22272], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [14, 654]}, '2': {'Retries': 2, 'WallDurations': [9.0, 15485.0, 41544.0, 9.0, 3356.0, 22841.0], 'StartTimes': [1541840093.0, 1541855834.0, 1541897679.0, 1541901142.0], 'SubmitTimes': [1541839909.0, 1541855647.0, 1541897510.0, -1], 'JobIds': ['30324945.0', '30329324.0', '30350645.0', '30350645.0'], 'EndTimes': [1541855578.0, 1541897378.0, 1541901035.0, 1541923983.0], 'Restarts': 1, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1101028, 1129312, 1087192, 0], 'TotalUserCpuTimeHistory': [4777, 18991, 2151.0, 20791], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [120, 458, 34.0, 491]}, '5': {'Retries': 2, 'WallDurations': [8.0, 25193.0, 9.0, 35944.0, 18737.0], 'StartTimes': [1541840092.0, 1541865511.0, 1541901723.0], 'SubmitTimes': [1541839909.0, 1541865353.0, 1541901581.0], 'JobIds': ['30324950.0', '30337535.0', '30354972.0'], 'TotalUserCpuTimeHistory': [12970, 18735, 9206], 'EndTimes': [1541865285.0, 1541901455.0, 1541920460.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1132100, 1175488, 1192536], 'Error': [8021, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FileReadError' occurred while\n   [0] Calling InputSource::readEvent_\n   [1] Reading branch EventSelections\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] Handling XrdAdaptor::RequestManager::requestFailure()\n   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()\nException Message:\nXrdCl::File::Open(name='root://xrootd.t2.ucsd.edu:2040//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/002CFD4E-F741-E811-BA25-008CFAC91BB0.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Too many attempts to gain dfs read access to the file\n' (errno=3011, code=400)\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)).\n      [b] Original failed source is xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)\n      [c] Disabled source: xcache-09.t2.ucsd.edu:1094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FileReadError' occurred while\n   [0] Calling InputSource::readEvent_\n   [1] Reading branch EventSelections\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] Handling XrdAdaptor::RequestManager::requestFailure()\n   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()\nException Message:\nXrdCl::File::Open(name='root://xrootd.t2.ucsd.edu:2040//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/002CFD4E-F741-E811-BA25-008CFAC91BB0.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Too many attempts to gain dfs read access to the file\n' (errno=3011, code=400)\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)).\n      [b] Original failed source is xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)\n      [c] Disabled source: xcache-09.t2.ucsd.edu:1094", 'exitCode': '8021'}], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [235, 399, 172]}, '4': {'Retries': 0, 'WallDurations': [8.0, 39034.0], 'StartTimes': [1541840090.0], 'SubmitTimes': [1541839909.0], 'JobIds': ['30324946.0'], 'EndTimes': [1541879124.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1227660], 'TotalUserCpuTimeHistory': [32425], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [508]}, '7': {'Retries': 2, 'WallDurations': [9.0, 25584.0, 511.0, 36831.0], 'StartTimes': [1541840093.0, 1541865769.0, 1541866453.0], 'SubmitTimes': [1541839909.0, 1541865746.0, 1541866407.0], 'JobIds': ['30324949.0', '30337795.0', '30338298.0'], 'EndTimes': [1541865677.0, 1541866280.0, 1541903284.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [1131032, 647620, 1223148], 'TotalUserCpuTimeHistory': [11464, 31, 31468], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'T1_UK_RAL'], 'TotalSysCpuTimeHistory': [257, 4, 1069]}, '6': {'Retries': 1, 'WallDurations': [9.0, 6612.0, 8.0, 20262.0, 0, 30692.0], 'StartTimes': [1541840092.0, 1541847023.0, 1541867367.0], 'SubmitTimes': [1541839909.0, 1541846772.0, -1], 'JobIds': ['30324948.0', '30327131.0', '30327131.0'], 'EndTimes': [1541846704.0, 1541867285.0, 1541898059.0], 'Restarts': 1, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [1088352, 1132836, 1374876], 'TotalUserCpuTimeHistory': [3989, 12035.0, 25744], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T1_UK_RAL'], 'TotalSysCpuTimeHistory': [102, 240.0, 816]}, '9': {'Retries': 0, 'WallDurations': [9.0, 22232.0], 'StartTimes': [1541840185.0], 'SubmitTimes': [1541839909.0], 'JobIds': ['30324951.0'], 'EndTimes': [1541862417.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1138948], 'TotalUserCpuTimeHistory': [20892], 'SiteHistory': ['Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [568]}, '8': {'Retries': 1, 'WallDurations': [9.0, 313.0, 8.0, 23589.0], 'StartTimes': [1541840094.0, 1541840698.0], 'SubmitTimes': [1541839910.0, 1541840474.0], 'JobIds': ['30324952.0', '30325008.0'], 'EndTimes': [1541840407.0, 1541864287.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [960324, 1180760], 'TotalUserCpuTimeHistory': [77, 22154], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [2, 590]}}
+INFO 2018-11-11 04:10:38,944: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-11-11 04:10:38,944: 	 
+Jobs status:                    failed        		  12.5% ( 2/16)
+INFO 2018-11-11 04:10:38,944: 	 				finished       62.5% (10/16)
+INFO 2018-11-11 04:10:38,944: 	 				transferring   25.0% ( 4/16)
+INFO 2018-11-11 04:10:38,944: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-11-11 04:10:38,944: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 50664
+
+ 1 jobs failed with exit code 8021
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-11-11 04:10:38,945: 	 
+Summary of run jobs:
+ * Memory: 1108MB min, 1342MB max, 1100MB ave
+ * Runtime: 2:13:29 min, 18:37:07 max, 8:35:26 ave
+ * CPU eff: 28% min, 97% max, 76% ave
+ * Waste: 91:46:03 (40% of total)
+
+DEBUG 2018-11-11 04:10:38,961: 	 Requesting resubmission of failed jobs in task 181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-11 04:10:38,961: 	 Sending resubmit request to the server.
+DEBUG 2018-11-11 04:10:38,961: 	 Submitting {'publication': 0, 'jobids': ['12', '5'], 'subresource': 'resubmit2', 'workflow': u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1'} 
+DEBUG 2018-11-11 04:10:38,961: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1&jobids=12&jobids=5
+DEBUG 2018-11-11 04:10:40,657: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-11-11 04:10:40,657: 	 Resubmit request sent to the server.
+INFO 2018-11-11 04:10:40,657: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-11-11 04:10:40,665: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/crab.log
+DEBUG 2018-11-12 02:15:41,641: 	 Executing command: 'resubmit'
+DEBUG 2018-11-12 02:15:41,642: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-12 02:15:41,662: 	 Checking credentials
+DEBUG 2018-11-12 02:15:41,662: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-12 02:15:41,662: 	 Getting proxy life time left
+DEBUG 2018-11-12 02:15:41,764: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 34291
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:41,867: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 34291
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:41,867: 	 Proxy valid for 09:31:31 hours
+DEBUG 2018-11-12 02:15:41,978: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:41,978: 	 Checking credentials
+DEBUG 2018-11-12 02:15:41,978: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-12 02:15:41,978: 	 Getting proxy life time left
+DEBUG 2018-11-12 02:15:42,081: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 34290
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:42,184: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 34290
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:42,184: 	 Proxy valid for 09:31:30 hours
+DEBUG 2018-11-12 02:15:45,775: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-12 02:15:45,881: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:45,881: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-12 02:15:45,881: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-12 02:15:46,586: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 562:08:32  (23.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:46,587: 	 Myproxy is valid: 2023712
+DEBUG 2018-11-12 02:15:46,587: 	 Command use: resubmit
+DEBUG 2018-11-12 02:15:46,587: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1']
+DEBUG 2018-11-12 02:15:48,093: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-12 02:15:48,093: 	 Instance is prod
+DEBUG 2018-11-12 02:15:48,093: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-12 02:15:48,093: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-12 02:15:48,093: 	 Executing command: 'status'
+DEBUG 2018-11-12 02:15:48,112: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-12 02:15:48,228: 	 Checking credentials
+DEBUG 2018-11-12 02:15:48,228: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-12 02:15:48,229: 	 Getting proxy life time left
+DEBUG 2018-11-12 02:15:48,331: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 34284
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:48,434: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 34284
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:48,434: 	 Proxy valid for 09:31:24 hours
+DEBUG 2018-11-12 02:15:48,548: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:48,548: 	 Checking credentials
+DEBUG 2018-11-12 02:15:48,548: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-12 02:15:48,548: 	 Getting proxy life time left
+DEBUG 2018-11-12 02:15:48,651: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 34284
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:48,754: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 34284
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:48,754: 	 Proxy valid for 09:31:24 hours
+DEBUG 2018-11-12 02:15:50,273: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-12 02:15:50,379: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:50,379: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-12 02:15:50,379: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-12 02:15:51,183: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 562:08:27  (23.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-12 02:15:51,184: 	 Myproxy is valid: 2023707
+DEBUG 2018-11-12 02:15:51,184: 	 Command use: status
+DEBUG 2018-11-12 02:15:51,184: 	 Options use: []
+DEBUG 2018-11-12 02:15:52,746: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-12 02:15:52,746: 	 Instance is prod
+DEBUG 2018-11-12 02:15:52,746: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-12 02:15:52,746: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-12 02:15:54,263: 	 Got information from server oracle database: {u'result': [u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1', u'None', u'None', u'SUBMITTED', u'None', u'2018-11-10 08:50:38.565389', u'None', u'2018-11-10 08:51:37.464446', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'0dbcda73c561abb6ab2d353795d4b9f956c008a1db1a532439de2512e682e52c.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_ZJets1-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['ZJets1_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['12', '5'], 'numcores': 1, 'site_whitelist': [], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0107.cern.ch/mon/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0107.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8', u'None', u'a8c20cd7233a7dd3597aff461252d557ee7fabab0483fb50ce28d6e6164b7428.tar.gz', u'30324941', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-11-12 02:15:54,263: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-12 02:15:54,263: 	 Task name:			181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-12 02:15:54,265: 	 Grid scheduler - Task Worker:	crab3@vocms0107.cern.ch - crab-prod-tw01
+INFO 2018-11-12 02:15:54,265: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-11-12 02:15:54,265: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-12 02:15:54,265: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-12 02:15:54,265: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 30324941)
+DEBUG 2018-11-12 02:15:54,265: 	 Webdir is located at http://vocms0107.cern.ch/mon/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-12 02:15:55,831: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0107/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-12 02:15:55,832: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0107/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1/status_cache
+DEBUG 2018-11-12 02:15:57,422: 	 Got information from status cache file: {'11': {'Retries': 2, 'WallDurations': [9.0, 15549.0, 726.0, 9.0, 24785.0], 'StartTimes': [1541840098.0, 1541855833.0, 1541856878.0], 'SubmitTimes': [1541839910.0, 1541855712.0, 1541856688.0], 'JobIds': ['30324954.0', '30329326.0', '30329954.0'], 'EndTimes': [1541855647.0, 1541856559.0, 1541881663.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1129368, 598376, 1158584], 'TotalUserCpuTimeHistory': [8019, 26, 23286], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [139, 3, 653]}, '10': {'Retries': 2, 'WallDurations': [14.0, 42916.0, 8.0, 32534.0, 38765.0], 'StartTimes': [1541840123.0, 1541883223.0, 1541960259.0], 'SubmitTimes': [1541839910.0, 1541883111.0, 1541960063.0], 'JobIds': ['30324953.0', '30348208.0', '30377200.0'], 'EndTimes': [1541883039.0, 1541915757.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1085820, 1329800, 1133636], 'TotalUserCpuTimeHistory': [19282, 27657, 16875.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T1_UK_RAL', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [3920, 1049, 475.0]}, '13': {'Retries': 3, 'WallDurations': [8.0, 14301.0, 15793.0, 33757.0, 10.0, 11124.0], 'StartTimes': [1541840090.0, 1541854571.0, 1541870543.0, 1541956590.0], 'SubmitTimes': [1541839910.0, -1, -1, 1541956397.0], 'JobIds': ['30324956.0', '30324956.0', '30324956.0', '30376580.0'], 'TotalUserCpuTimeHistory': [8824.0, 0.0, 27233, 4076.0], 'EndTimes': [1541854391.0, 1541870364.0, 1541904300.0], 'Restarts': 2, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1174804, 0, 1250000, 2075216], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Nebraska', 'T2_AT_Vienna', 'T1_UK_RAL', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [168.0, 0.0, 1165, 103.0]}, '12': {'Retries': 1, 'WallDurations': [9.0, 67027.0, 51969.0], 'StartTimes': [1541840112.0, 1541931120.0], 'SubmitTimes': [1541839910.0, 1541931091.0], 'JobIds': ['30324955.0', '30360085.0'], 'EndTimes': [1541983089.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1128060, 1235840], 'Error': [50664, 'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}], 'TotalUserCpuTimeHistory': [18079.0, 40450], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'T2_US_Vanderbilt'], 'TotalSysCpuTimeHistory': [702.0, 1036]}, '15': {'Retries': 2, 'WallDurations': [8.0, 23492.0, 8.0, 1646.0, 55736.0], 'StartTimes': [1541840098.0, 1541863864.0, 1541865769.0], 'SubmitTimes': [1541839910.0, 1541863655.0, 1541865639.0], 'JobIds': ['30324957.0', '30336799.0', '30337719.0'], 'EndTimes': [1541863590.0, 1541865510.0, 1541921505.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1111372, 1104788, 1143604], 'TotalUserCpuTimeHistory': [12295, 712, 29189], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [232, 23, 542]}, '14': {'Retries': 1, 'WallDurations': [8.0, 21985.0, 9.0, 20546.0], 'StartTimes': [1541840098.0, 1541862383.0], 'SubmitTimes': [1541839910.0, 1541862154.0], 'JobIds': ['30324958.0', '30335319.0'], 'EndTimes': [1541862083.0, 1541882929.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1174172, 1239900], 'TotalUserCpuTimeHistory': [9922, 19315], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [221, 522]}, '16': {'Retries': 1, 'WallDurations': [8.0, 9199.0, 8009.0], 'StartTimes': [1541840093.0, 1541849450.0], 'SubmitTimes': [1541839910.0, 1541849362.0], 'JobIds': ['30324959.0', '30328025.0'], 'EndTimes': [1541849292.0, 1541857459.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1108152, 1065548], 'TotalUserCpuTimeHistory': [5697, 7600], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [142, 123]}, '1': {'Retries': 1, 'WallDurations': [9.0, 8988.0, 8.0, 34752.0], 'StartTimes': [1541840092.0, 1541849293.0], 'SubmitTimes': [1541839908.0, 1541849145.0], 'JobIds': ['30324944.0', '30327916.0'], 'EndTimes': [1541849080.0, 1541884045.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1113360, 1135456], 'TotalUserCpuTimeHistory': [4559, 30775], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [97, 430]}, '3': {'Retries': 1, 'WallDurations': [8.0, 746.0, 23714.0], 'StartTimes': [1541840098.0, 1541841145.0], 'SubmitTimes': [1541839909.0, 1541840913.0], 'JobIds': ['30324947.0', '30325269.0'], 'EndTimes': [1541840844.0, 1541864859.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1177376, 1233180], 'TotalUserCpuTimeHistory': [449, 22272], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [14, 654]}, '2': {'Retries': 2, 'WallDurations': [9.0, 15485.0, 41544.0, 9.0, 3356.0, 22841.0], 'StartTimes': [1541840093.0, 1541855834.0, 1541897679.0, 1541901142.0], 'SubmitTimes': [1541839909.0, 1541855647.0, 1541897510.0, -1], 'JobIds': ['30324945.0', '30329324.0', '30350645.0', '30350645.0'], 'EndTimes': [1541855578.0, 1541897378.0, 1541901035.0, 1541923983.0], 'Restarts': 1, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1101028, 1129312, 1087192, 0], 'TotalUserCpuTimeHistory': [4777, 18991, 2151.0, 20791], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [120, 458, 34.0, 491]}, '5': {'Retries': 5, 'WallDurations': [8.0, 25193.0, 9.0, 35944.0, 18737.0, 468.0, 2781.0, 0, 18006.0], 'StartTimes': [1541840092.0, 1541865511.0, 1541901723.0, 1541931125.0, 1541932016.0, 1541935404.0], 'SubmitTimes': [1541839909.0, 1541865353.0, 1541901581.0, 1541931090.0, 1541931844.0, 1541935107.0], 'JobIds': ['30324950.0', '30337535.0', '30354972.0', '30360084.0', '30360110.0', '30361763.0'], 'EndTimes': [1541865285.0, 1541901455.0, 1541920460.0, 1541931593.0, 1541934797.0, 1541953410.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1132100, 1175488, 1192536, 943880, 1160512, 1161836], 'Error': [8021, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FileReadError' occurred while\n   [0] Rethrowing an exception that happened on a different thread.\n   [1] Reading branch recoVertexs_offlineSlimmedPrimaryVertices__PAT.\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] Handling XrdAdaptor::RequestManager::requestFailure()\n   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()\nException Message:\nXrdCl::File::Open(name='root://xrootd.t2.ucsd.edu:2040//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/04025234-5642-E811-9A58-008CFAE45128.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Too many attempts to gain dfs read access to the file\n' (errno=3011, code=400)\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)).\n      [b] Original failed source is xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)\n      [c] Disabled source: xcache-09.t2.ucsd.edu:1094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FileReadError' occurred while\n   [0] Rethrowing an exception that happened on a different thread.\n   [1] Reading branch recoVertexs_offlineSlimmedPrimaryVertices__PAT.\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] Handling XrdAdaptor::RequestManager::requestFailure()\n   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()\nException Message:\nXrdCl::File::Open(name='root://xrootd.t2.ucsd.edu:2040//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/04025234-5642-E811-9A58-008CFAE45128.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Too many attempts to gain dfs read access to the file\n' (errno=3011, code=400)\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)).\n      [b] Original failed source is xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)\n      [c] Disabled source: xcache-09.t2.ucsd.edu:1094", 'exitCode': '8021'}], 'TotalUserCpuTimeHistory': [12970, 18735, 9206, 37, 1195, 9894], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [235, 399, 172, 1, 29, 167]}, '4': {'Retries': 0, 'WallDurations': [8.0, 39034.0], 'StartTimes': [1541840090.0], 'SubmitTimes': [1541839909.0], 'JobIds': ['30324946.0'], 'EndTimes': [1541879124.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1227660], 'TotalUserCpuTimeHistory': [32425], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [508]}, '7': {'Retries': 2, 'WallDurations': [9.0, 25584.0, 511.0, 36831.0], 'StartTimes': [1541840093.0, 1541865769.0, 1541866453.0], 'SubmitTimes': [1541839909.0, 1541865746.0, 1541866407.0], 'JobIds': ['30324949.0', '30337795.0', '30338298.0'], 'TotalUserCpuTimeHistory': [11464, 31, 31468], 'EndTimes': [1541865677.0, 1541866280.0, 1541903284.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1131032, 647620, 1223148], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- 2c7d514ebacc85b2baf7d361238785b78aee6ebf9ae0d9175eb92154:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  an end-of-file was reached globus_xio: An end of file occurred  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/d8cd45a8-e5af-11e8-8945-02163e018998\n  <----- ASO log finish ----', {}], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'T1_UK_RAL'], 'TotalSysCpuTimeHistory': [257, 4, 1069]}, '6': {'Retries': 3, 'WallDurations': [9.0, 6612.0, 8.0, 20262.0, 0, 30692.0, 38490.0], 'StartTimes': [1541840092.0, 1541847023.0, 1541867367.0, 1541942153.0], 'SubmitTimes': [1541839909.0, 1541846772.0, -1, 1541942029.0], 'JobIds': ['30324948.0', '30327131.0', '30327131.0', '30367482.0'], 'EndTimes': [1541846704.0, 1541867285.0, 1541898059.0, 1541980643.0], 'Restarts': 1, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1088352, 1132836, 1374876, 1186152], 'TotalUserCpuTimeHistory': [3989, 12035.0, 25744, 32433], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T1_UK_RAL', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [102, 240.0, 816, 445]}, '9': {'Retries': 0, 'WallDurations': [9.0, 22232.0], 'StartTimes': [1541840185.0], 'SubmitTimes': [1541839909.0], 'JobIds': ['30324951.0'], 'EndTimes': [1541862417.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1138948], 'TotalUserCpuTimeHistory': [20892], 'SiteHistory': ['Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [568]}, '8': {'Retries': 1, 'WallDurations': [9.0, 313.0, 8.0, 23589.0], 'StartTimes': [1541840094.0, 1541840698.0], 'SubmitTimes': [1541839910.0, 1541840474.0], 'JobIds': ['30324952.0', '30325008.0'], 'EndTimes': [1541840407.0, 1541864287.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [960324, 1180760], 'TotalUserCpuTimeHistory': [77, 22154], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [2, 590]}}
+INFO 2018-11-12 02:15:57,422: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-11-12 02:15:57,422: 	 
+Jobs status:                    failed        		  18.8% ( 3/16)
+INFO 2018-11-12 02:15:57,422: 	 				finished       75.0% (12/16)
+INFO 2018-11-12 02:15:57,422: 	 				running         6.2% ( 1/16)
+INFO 2018-11-12 02:15:57,422: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-11-12 02:15:57,422: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed in postprocessing step
+
+ 1 jobs failed with exit code 50660
+
+ 1 jobs failed with exit code 8021
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-11-12 02:15:57,423: 	 
+Summary of run jobs:
+ * Memory: 1108MB min, 2026MB max, 1133MB ave
+ * Runtime: 2:13:29 min, 15:28:56 max, 7:59:37 ave
+ * CPU eff: 38% min, 97% max, 82% ave
+ * Waste: 122:28:17 (51% of total)
+
+DEBUG 2018-11-12 02:15:57,439: 	 Requesting resubmission of failed jobs in task 181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-12 02:15:57,439: 	 Sending resubmit request to the server.
+DEBUG 2018-11-12 02:15:57,439: 	 Submitting {'publication': 0, 'jobids': ['13', '5', '7'], 'subresource': 'resubmit2', 'workflow': u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1'} 
+DEBUG 2018-11-12 02:15:57,439: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1&jobids=13&jobids=5&jobids=7
+DEBUG 2018-11-12 02:15:58,999: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-11-12 02:15:58,999: 	 Resubmit request sent to the server.
+INFO 2018-11-12 02:15:58,999: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-11-12 02:15:59,004: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/crab.log
+DEBUG 2018-11-13 05:04:04,326: 	 Executing command: 'resubmit'
+DEBUG 2018-11-13 05:04:04,327: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-13 05:04:04,359: 	 Checking credentials
+DEBUG 2018-11-13 05:04:04,359: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-13 05:04:04,359: 	 Getting proxy life time left
+DEBUG 2018-11-13 05:04:04,463: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 676751
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:04,567: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 676751
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:04,567: 	 Proxy valid for 187:59:11 hours
+DEBUG 2018-11-13 05:04:04,682: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:04,683: 	 Checking credentials
+DEBUG 2018-11-13 05:04:04,683: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-13 05:04:04,683: 	 Getting proxy life time left
+DEBUG 2018-11-13 05:04:04,786: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 676751
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:04,890: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 676751
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:04,891: 	 Proxy valid for 187:59:11 hours
+DEBUG 2018-11-13 05:04:11,834: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-13 05:04:11,943: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:11,944: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-13 05:04:11,944: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-13 05:04:12,849: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 535:20:06  (22.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:12,851: 	 Myproxy is valid: 1927206
+DEBUG 2018-11-13 05:04:12,851: 	 Command use: resubmit
+DEBUG 2018-11-13 05:04:12,851: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/']
+DEBUG 2018-11-13 05:04:14,610: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-13 05:04:14,610: 	 Instance is prod
+DEBUG 2018-11-13 05:04:14,610: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-13 05:04:14,610: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-13 05:04:14,610: 	 Executing command: 'status'
+DEBUG 2018-11-13 05:04:14,610: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-13 05:04:14,618: 	 Checking credentials
+DEBUG 2018-11-13 05:04:14,619: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-13 05:04:14,619: 	 Getting proxy life time left
+DEBUG 2018-11-13 05:04:14,721: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 676741
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:14,824: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 676741
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:14,824: 	 Proxy valid for 187:59:01 hours
+DEBUG 2018-11-13 05:04:14,938: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:14,938: 	 Checking credentials
+DEBUG 2018-11-13 05:04:14,938: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-13 05:04:14,938: 	 Getting proxy life time left
+DEBUG 2018-11-13 05:04:15,042: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 676740
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:15,145: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 676740
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:15,146: 	 Proxy valid for 187:59:00 hours
+DEBUG 2018-11-13 05:04:16,734: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-13 05:04:16,843: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:16,843: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-13 05:04:16,843: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-13 05:04:17,548: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 535:20:01  (22.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-13 05:04:17,548: 	 Myproxy is valid: 1927201
+DEBUG 2018-11-13 05:04:17,548: 	 Command use: status
+DEBUG 2018-11-13 05:04:17,548: 	 Options use: []
+DEBUG 2018-11-13 05:04:19,459: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-13 05:04:19,459: 	 Instance is prod
+DEBUG 2018-11-13 05:04:19,459: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-13 05:04:19,459: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-13 05:04:21,389: 	 Got information from server oracle database: {u'result': [u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1', u'None', u'None', u'SUBMITTED', u'None', u'2018-11-10 08:50:38.565389', u'None', u'2018-11-10 08:51:37.464446', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'0dbcda73c561abb6ab2d353795d4b9f956c008a1db1a532439de2512e682e52c.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_ZJets1-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['ZJets1_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['13', '5', '7'], 'numcores': 1, 'site_whitelist': [], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0107.cern.ch/mon/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0107.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8', u'None', u'a8c20cd7233a7dd3597aff461252d557ee7fabab0483fb50ce28d6e6164b7428.tar.gz', u'30324941', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-11-13 05:04:21,390: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-13 05:04:21,390: 	 Task name:			181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-13 05:04:21,391: 	 Grid scheduler - Task Worker:	crab3@vocms0107.cern.ch - crab-prod-tw01
+INFO 2018-11-13 05:04:21,391: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-11-13 05:04:21,391: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-13 05:04:21,391: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-13 05:04:21,392: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 30324941)
+DEBUG 2018-11-13 05:04:21,392: 	 Webdir is located at http://vocms0107.cern.ch/mon/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-13 05:04:23,405: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0107/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+DEBUG 2018-11-13 05:04:23,405: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0107/cms1693/181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1/status_cache
+DEBUG 2018-11-13 05:04:25,020: 	 Got information from status cache file: {'11': {'Retries': 2, 'WallDurations': [9.0, 15549.0, 726.0, 9.0, 24785.0], 'StartTimes': [1541840098.0, 1541855833.0, 1541856878.0], 'SubmitTimes': [1541839910.0, 1541855712.0, 1541856688.0], 'JobIds': ['30324954.0', '30329326.0', '30329954.0'], 'EndTimes': [1541855647.0, 1541856559.0, 1541881663.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1129368, 598376, 1158584], 'TotalUserCpuTimeHistory': [8019, 26, 23286], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [139, 3, 653]}, '10': {'Retries': 2, 'WallDurations': [14.0, 42916.0, 8.0, 32534.0, 58918.0], 'StartTimes': [1541840123.0, 1541883223.0, 1541960259.0], 'SubmitTimes': [1541839910.0, 1541883111.0, 1541960063.0], 'JobIds': ['30324953.0', '30348208.0', '30377200.0'], 'TotalUserCpuTimeHistory': [19282, 27657, 25972], 'EndTimes': [1541883039.0, 1541915757.0, 1542019177.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1085820, 1329800, 1133636], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- 99136048cbb202ee5431d151278152695c604dd9190d58ef25a3aaed:\n  -----> ASO log start -----\n  Job has been canceled because it stayed in the queue for too long [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/698d006c-e667-11e8-82ba-02163e018f23\n  <----- ASO log finish ----', {}], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T1_UK_RAL', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [3920, 1049, 699]}, '13': {'Retries': 6, 'WallDurations': [8.0, 14301.0, 15793.0, 33757.0, 10.0, 11124.0, 9.0, 30626.0, 10.0, 6698.0, 13338.0], 'StartTimes': [1541840090.0, 1541854571.0, 1541870543.0, 1541956590.0, 1542010770.0, 1542072356.0, 1542079330.0], 'SubmitTimes': [1541839910.0, -1, -1, 1541956397.0, 1542010617.0, 1542072223.0, 1542079301.0], 'JobIds': ['30324956.0', '30324956.0', '30324956.0', '30376580.0', '30407118.0', '30461536.0', '30463088.0'], 'TotalUserCpuTimeHistory': [8824.0, 0.0, 27233, 4076.0, 20741, 4085, 6607], 'EndTimes': [1541854391.0, 1541870364.0, 1541904300.0, 1542041396.0, 1542079054.0, 1542092668.0], 'Restarts': 2, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1174804, 0, 1250000, 2075216, 1638044, 1150632, 1194204], 'Error': [8021, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FileReadError' occurred while\n   [0] Rethrowing an exception that happened on a different thread.\n   [1] Reading branch recoVertexs_offlineSlimmedPrimaryVertices__PAT.\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] In XrdAdaptor::RequestManager::requestFailure()\nException Message:\nXrdAdaptor::RequestManager::requestFailure Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/90000/3CD88330-5142-E811-BFC9-008CFAE4509C.root', flags=0x10, permissions=0660, old source=cms-aaa-proxy695.gridpp.rl.ac.uk:1094 (site T1_UK_RAL)) => timeout when waiting for file open\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=cms-aaa-proxy695.gridpp.rl.ac.uk:1094 (site T1_UK_RAL)).\n      [b] Disabled source: cms-g004.rcac.purdue.edu:1094\n      [c] Disabled source: cms-aaa-proxy695.gridpp.rl.ac.uk:1094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FileReadError' occurred while\n   [0] Rethrowing an exception that happened on a different thread.\n   [1] Reading branch recoVertexs_offlineSlimmedPrimaryVertices__PAT.\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] In XrdAdaptor::RequestManager::requestFailure()\nException Message:\nXrdAdaptor::RequestManager::requestFailure Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/90000/3CD88330-5142-E811-BFC9-008CFAE4509C.root', flags=0x10, permissions=0660, old source=cms-aaa-proxy695.gridpp.rl.ac.uk:1094 (site T1_UK_RAL)) => timeout when waiting for file open\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=cms-aaa-proxy695.gridpp.rl.ac.uk:1094 (site T1_UK_RAL)).\n      [b] Disabled source: cms-g004.rcac.purdue.edu:1094\n      [c] Disabled source: cms-aaa-proxy695.gridpp.rl.ac.uk:1094", 'exitCode': '8021'}], 'SiteHistory': ['Unknown', 'T2_US_Nebraska', 'T2_AT_Vienna', 'T1_UK_RAL', 'Unknown', 'T2_US_Caltech', 'Unknown', 'T1_UK_RAL', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [168.0, 0.0, 1165, 103.0, 702, 84, 98]}, '12': {'Retries': 1, 'WallDurations': [9.0, 67027.0, 51969.0], 'StartTimes': [1541840112.0, 1541931120.0], 'SubmitTimes': [1541839910.0, 1541931091.0], 'JobIds': ['30324955.0', '30360085.0'], 'EndTimes': [1541983089.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1128060, 1235840], 'Error': [50664, 'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}], 'TotalUserCpuTimeHistory': [18079.0, 40450], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'T2_US_Vanderbilt'], 'TotalSysCpuTimeHistory': [702.0, 1036]}, '15': {'Retries': 2, 'WallDurations': [8.0, 23492.0, 8.0, 1646.0, 55736.0], 'StartTimes': [1541840098.0, 1541863864.0, 1541865769.0], 'SubmitTimes': [1541839910.0, 1541863655.0, 1541865639.0], 'JobIds': ['30324957.0', '30336799.0', '30337719.0'], 'EndTimes': [1541863590.0, 1541865510.0, 1541921505.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1111372, 1104788, 1143604], 'TotalUserCpuTimeHistory': [12295, 712, 29189], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [232, 23, 542]}, '14': {'Retries': 1, 'WallDurations': [8.0, 21985.0, 9.0, 20546.0], 'StartTimes': [1541840098.0, 1541862383.0], 'SubmitTimes': [1541839910.0, 1541862154.0], 'JobIds': ['30324958.0', '30335319.0'], 'EndTimes': [1541862083.0, 1541882929.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1174172, 1239900], 'TotalUserCpuTimeHistory': [9922, 19315], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [221, 522]}, '16': {'Retries': 1, 'WallDurations': [8.0, 9199.0, 8009.0], 'StartTimes': [1541840093.0, 1541849450.0], 'SubmitTimes': [1541839910.0, 1541849362.0], 'JobIds': ['30324959.0', '30328025.0'], 'EndTimes': [1541849292.0, 1541857459.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1108152, 1065548], 'TotalUserCpuTimeHistory': [5697, 7600], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [142, 123]}, '1': {'Retries': 1, 'WallDurations': [9.0, 8988.0, 8.0, 34752.0], 'StartTimes': [1541840092.0, 1541849293.0], 'SubmitTimes': [1541839908.0, 1541849145.0], 'JobIds': ['30324944.0', '30327916.0'], 'EndTimes': [1541849080.0, 1541884045.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1113360, 1135456], 'TotalUserCpuTimeHistory': [4559, 30775], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [97, 430]}, '3': {'Retries': 1, 'WallDurations': [8.0, 746.0, 23714.0], 'StartTimes': [1541840098.0, 1541841145.0], 'SubmitTimes': [1541839909.0, 1541840913.0], 'JobIds': ['30324947.0', '30325269.0'], 'EndTimes': [1541840844.0, 1541864859.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1177376, 1233180], 'TotalUserCpuTimeHistory': [449, 22272], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [14, 654]}, '2': {'Retries': 2, 'WallDurations': [9.0, 15485.0, 41544.0, 9.0, 3356.0, 22841.0], 'StartTimes': [1541840093.0, 1541855834.0, 1541897679.0, 1541901142.0], 'SubmitTimes': [1541839909.0, 1541855647.0, 1541897510.0, -1], 'JobIds': ['30324945.0', '30329324.0', '30350645.0', '30350645.0'], 'EndTimes': [1541855578.0, 1541897378.0, 1541901035.0, 1541923983.0], 'Restarts': 1, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1101028, 1129312, 1087192, 0], 'TotalUserCpuTimeHistory': [4777, 18991, 2151.0, 20791], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [120, 458, 34.0, 491]}, '5': {'Retries': 7, 'WallDurations': [8.0, 25193.0, 9.0, 35944.0, 18737.0, 468.0, 2781.0, 0, 18006.0, 8.0, 32850.0, 9.0, 911.0], 'StartTimes': [1541840092.0, 1541865511.0, 1541901723.0, 1541931125.0, 1541932016.0, 1541935404.0, 1542010770.0, 1542105723.0], 'SubmitTimes': [1541839909.0, 1541865353.0, 1541901581.0, 1541931090.0, 1541931844.0, 1541935107.0, 1542010617.0, 1542105338.0], 'JobIds': ['30324950.0', '30337535.0', '30354972.0', '30360084.0', '30360110.0', '30361763.0', '30407119.0', '30470107.0'], 'EndTimes': [1541865285.0, 1541901455.0, 1541920460.0, 1541931593.0, 1541934797.0, 1541953410.0, 1542043620.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1132100, 1175488, 1192536, 943880, 1160512, 1161836, 1333844, 1150844], 'Error': [8021, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FileReadError' occurred while\n   [0] Rethrowing an exception that happened on a different thread.\n   [1] Reading branch recoVertexs_offlineSlimmedPrimaryVertices__PAT.\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] Handling XrdAdaptor::RequestManager::requestFailure()\n   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()\nException Message:\nXrdCl::File::Open(name='root://xrootd.t2.ucsd.edu:2040//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/04025234-5642-E811-9A58-008CFAE45128.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Too many attempts to gain dfs read access to the file\n' (errno=3011, code=400)\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)).\n      [b] Original failed source is xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)\n      [c] Disabled source: xcache-09.t2.ucsd.edu:1094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FileReadError' occurred while\n   [0] Rethrowing an exception that happened on a different thread.\n   [1] Reading branch recoVertexs_offlineSlimmedPrimaryVertices__PAT.\n   [2] Calling XrdFile::readv()\n   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [4] Handling XrdAdaptor::RequestManager::requestFailure()\n   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()\nException Message:\nXrdCl::File::Open(name='root://xrootd.t2.ucsd.edu:2040//store/mc/RunIIFall17MiniAODv2/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/04025234-5642-E811-9A58-008CFAE45128.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] Too many attempts to gain dfs read access to the file\n' (errno=3011, code=400)\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)).\n      [b] Original failed source is xcache-09.t2.ucsd.edu:1094 (site UCSD-XCACHE)\n      [c] Disabled source: xcache-09.t2.ucsd.edu:1094", 'exitCode': '8021'}], 'TotalUserCpuTimeHistory': [12970, 18735, 9206, 37, 1195, 9894, 21158, 412.0], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'T2_US_UCSD', 'T2_US_UCSD', 'Unknown', 'T2_US_UCSD', 'Unknown', 'T1_UK_RAL', 'Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [235, 399, 172, 1, 29, 167, 698, 22.0]}, '4': {'Retries': 0, 'WallDurations': [8.0, 39034.0], 'StartTimes': [1541840090.0], 'SubmitTimes': [1541839909.0], 'JobIds': ['30324946.0'], 'EndTimes': [1541879124.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1227660], 'TotalUserCpuTimeHistory': [32425], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [508]}, '7': {'Retries': 4, 'WallDurations': [9.0, 25584.0, 511.0, 36831.0, 8.0, 27869.0, 8.0, 17631.0], 'StartTimes': [1541840093.0, 1541865769.0, 1541866453.0, 1542010771.0, 1542073166.0], 'SubmitTimes': [1541839909.0, 1541865746.0, 1541866407.0, 1542010621.0, 1542073137.0], 'JobIds': ['30324949.0', '30337795.0', '30338298.0', '30407120.0', '30461710.0'], 'TotalUserCpuTimeHistory': [11464, 31, 31468, 18918, 16675], 'EndTimes': [1541865677.0, 1541866280.0, 1541903284.0, 1542038640.0, 1542090797.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1131032, 647620, 1223148, 1341648, 1165824], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- 2c7d514ebacc85b2baf7d361238785b78aee6ebf9ae0d9175eb92154:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  an end-of-file was reached globus_xio: An end of file occurred  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/d8cd45a8-e5af-11e8-8945-02163e018998\n  <----- ASO log finish ----', {}], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'T2_US_UCSD', 'T1_UK_RAL', 'Unknown', 'T1_UK_RAL', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [257, 4, 1069, 630, 467]}, '6': {'Retries': 3, 'WallDurations': [9.0, 6612.0, 8.0, 20262.0, 0, 30692.0, 38490.0], 'StartTimes': [1541840092.0, 1541847023.0, 1541867367.0, 1541942153.0], 'SubmitTimes': [1541839909.0, 1541846772.0, -1, 1541942029.0], 'JobIds': ['30324948.0', '30327131.0', '30327131.0', '30367482.0'], 'EndTimes': [1541846704.0, 1541867285.0, 1541898059.0, 1541980643.0], 'Restarts': 1, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1088352, 1132836, 1374876, 1186152], 'TotalUserCpuTimeHistory': [3989, 12035.0, 25744, 32433], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T1_UK_RAL', 'T2_DE_DESY'], 'TotalSysCpuTimeHistory': [102, 240.0, 816, 445]}, '9': {'Retries': 0, 'WallDurations': [9.0, 22232.0], 'StartTimes': [1541840185.0], 'SubmitTimes': [1541839909.0], 'JobIds': ['30324951.0'], 'EndTimes': [1541862417.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1138948], 'TotalUserCpuTimeHistory': [20892], 'SiteHistory': ['Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [568]}, '8': {'Retries': 1, 'WallDurations': [9.0, 313.0, 8.0, 23589.0], 'StartTimes': [1541840094.0, 1541840698.0], 'SubmitTimes': [1541839910.0, 1541840474.0], 'JobIds': ['30324952.0', '30325008.0'], 'EndTimes': [1541840407.0, 1541864287.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [960324, 1180760], 'TotalUserCpuTimeHistory': [77, 22154], 'SiteHistory': ['Unknown', 'T2_US_UCSD', 'Unknown', 'T2_AT_Vienna'], 'TotalSysCpuTimeHistory': [2, 590]}}
+INFO 2018-11-13 05:04:25,021: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-11-13 05:04:25,021: 	 
+Jobs status:                    failed        		  12.5% ( 2/16)
+INFO 2018-11-13 05:04:25,021: 	 				finished       81.2% (13/16)
+INFO 2018-11-13 05:04:25,021: 	 				running         6.2% ( 1/16)
+INFO 2018-11-13 05:04:25,021: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-11-13 05:04:25,021: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed in postprocessing step
+
+ 1 jobs failed with exit code 8021
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-11-13 05:04:25,022: 	 
+Summary of run jobs:
+ * Memory: 1123MB min, 1210MB max, 1070MB ave
+ * Runtime: 0:15:11 min, 16:21:58 max, 8:26:12 ave
+ * CPU eff: 45% min, 97% max, 79% ave
+ * Waste: 151:46:52 (55% of total)
+
+DEBUG 2018-11-13 05:04:25,060: 	 Requesting resubmission of failed jobs in task 181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1
+INFO 2018-11-13 05:04:25,060: 	 Sending resubmit request to the server.
+DEBUG 2018-11-13 05:04:25,060: 	 Submitting {'publication': 0, 'jobids': ['10', '13'], 'subresource': 'resubmit2', 'workflow': u'181110_085038:aldas_crab_job_Feb17_ggntuples_ZJets1'} 
+DEBUG 2018-11-13 05:04:25,060: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=181110_085038%3Aaldas_crab_job_Feb17_ggntuples_ZJets1&jobids=10&jobids=13
+DEBUG 2018-11-13 05:04:26,978: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-11-13 05:04:26,978: 	 Resubmit request sent to the server.
+INFO 2018-11-13 05:04:26,978: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-11-13 05:04:26,984: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_ZJets1/crab.log

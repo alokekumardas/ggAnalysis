@@ -1,0 +1,193 @@
+DEBUG 2018-10-29 03:55:33,386: 	 Executing command: 'submit'
+DEBUG 2018-10-29 03:55:33,390: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-29 03:55:33,399: 	 Checking credentials
+DEBUG 2018-10-29 03:55:33,399: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-29 03:55:33,399: 	 Getting proxy life time left
+DEBUG 2018-10-29 03:55:33,502: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 38751
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-29 03:55:33,606: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 38751
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-29 03:55:33,606: 	 Proxy valid for 10:45:51 hours
+DEBUG 2018-10-29 03:55:33,607: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-10-29 03:58:33,397: 	 Executing command: 'submit'
+DEBUG 2018-10-29 03:58:33,402: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-29 03:58:33,411: 	 Checking credentials
+DEBUG 2018-10-29 03:58:33,412: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-29 03:58:33,412: 	 Getting proxy life time left
+DEBUG 2018-10-29 03:58:33,515: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 38571
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-29 03:58:33,619: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 38571
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-29 03:58:33,619: 	 Proxy valid for 10:42:51 hours
+DEBUG 2018-10-29 03:58:33,620: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-10-30 07:24:06,644: 	 Executing command: 'status'
+DEBUG 2018-10-30 07:24:06,644: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-10-30 07:24:06,647: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples
+ERROR 2018-10-30 07:24:06,647: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 1021, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 441, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples
+DEBUG 2018-10-30 07:24:13,120: 	 Executing command: 'status'
+DEBUG 2018-10-30 07:24:13,121: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-10-30 07:24:13,122: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples
+ERROR 2018-10-30 07:24:13,122: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 1021, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 441, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples
+DEBUG 2018-10-30 07:24:50,424: 	 Executing command: 'status'
+DEBUG 2018-10-30 07:24:50,424: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-10-30 07:24:50,426: 	 Error: crab_projects_ntuples/job_Feb17_ggntuples_TTGamma_DiLept is not a valid CRAB project directory.
+ERROR 2018-10-30 07:24:50,426: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 1021, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects_ntuples/job_Feb17_ggntuples_TTGamma_DiLept is not a valid CRAB project directory.
+DEBUG 2018-10-30 07:28:20,126: 	 Executing command: 'status'
+DEBUG 2018-10-30 07:28:20,127: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-10-30 07:28:20,129: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples
+ERROR 2018-10-30 07:28:20,129: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 1021, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 441, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples
+DEBUG 2018-10-30 15:28:26,756: 	 Executing command: 'resubmit'
+DEBUG 2018-10-30 15:28:26,757: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-30 15:28:43,431: 	 Executing command: 'resubmit'
+DEBUG 2018-10-30 15:28:43,431: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-05 13:22:26,373: 	 Executing command: 'submit'
+DEBUG 2018-11-05 13:22:26,377: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-05 13:22:26,385: 	 Checking credentials
+DEBUG 2018-11-05 13:22:26,385: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-05 13:22:26,385: 	 Getting proxy life time left
+DEBUG 2018-11-05 13:22:26,488: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 40843
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-05 13:22:26,590: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 40843
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-05 13:22:26,591: 	 Proxy valid for 11:20:43 hours
+DEBUG 2018-11-05 13:22:26,591: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-11-11 04:03:49,395: 	 Executing command: 'resubmit'
+DEBUG 2018-11-11 04:03:49,396: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-11-11 04:03:49,401: 	 Error: crab_job_Feb17_ggntuples_QCD_EM5 is not a valid CRAB project directory.
+ERROR 2018-11-11 04:03:49,401: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 28, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 276, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_job_Feb17_ggntuples_QCD_EM5 is not a valid CRAB project directory.
+DEBUG 2018-11-13 04:48:30,131: 	 Executing command: 'resubmit'
+DEBUG 2018-11-13 04:48:30,133: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-11-13 04:48:30,144: 	 Error: crab_data_ggntuples_B_Mu_1 is not a valid CRAB project directory.
+ERROR 2018-11-13 04:48:30,144: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 28, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 276, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_data_ggntuples_B_Mu_1 is not a valid CRAB project directory.
+DEBUG 2018-11-13 04:48:43,823: 	 Executing command: 'resubmit'
+DEBUG 2018-11-13 04:48:43,824: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+ERROR 2018-11-13 04:48:43,844: 	 Error: crab_projects_ntuples/crab_data_ggntuples_B_Mu_1 is not a valid CRAB project directory.
+ERROR 2018-11-13 04:48:43,844: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 28, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 276, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1809-comp/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects_ntuples/crab_data_ggntuples_B_Mu_1 is not a valid CRAB project directory.

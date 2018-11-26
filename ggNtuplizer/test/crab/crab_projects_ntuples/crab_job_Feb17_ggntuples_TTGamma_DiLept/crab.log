@@ -1,0 +1,751 @@
+EgammaPostRecoTools: Fall17V2 electron modules not found, running ID without them. If you want Fall17V2 IDs, please merge the approprate PR
+EgammaPostRecoTools: Fall17V2 photons modules not found, running ID without them. If you want Fall17V2 IDs, please merge the approprate PR
+DEBUG 2018-10-30 07:17:46,102: 	 Executing command: 'submit'
+DEBUG 2018-10-30 07:17:46,108: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-30 07:17:46,120: 	 Checking credentials
+DEBUG 2018-10-30 07:17:46,120: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-30 07:17:46,120: 	 Getting proxy life time left
+DEBUG 2018-10-30 07:17:46,224: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 29245
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:46,327: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 29244
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:46,328: 	 Proxy valid for 08:07:25 hours
+DEBUG 2018-10-30 07:17:46,329: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-10-30 07:17:47,074: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:47,074: 	 Checking credentials
+DEBUG 2018-10-30 07:17:47,074: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-30 07:17:47,074: 	 Getting proxy life time left
+DEBUG 2018-10-30 07:17:47,178: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 29244
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:47,282: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 29243
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:47,282: 	 Proxy valid for 08:07:24 hours
+DEBUG 2018-10-30 07:17:47,385: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u54554 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:49,263: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-10-30 07:17:49,372: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:49,372: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-10-30 07:17:49,372: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-10-30 07:17:50,979: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 689:32:18  (28.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:17:50,982: 	 Myproxy is valid: 2482338
+DEBUG 2018-10-30 07:17:50,982: 	 Command use: submit
+DEBUG 2018-10-30 07:17:50,982: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x7fb9c0315ad0>]
+DEBUG 2018-10-30 07:17:52,760: 	 CRABClient version: 3.3.1809
+DEBUG 2018-10-30 07:17:52,760: 	 Instance is prod
+DEBUG 2018-10-30 07:17:52,760: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-10-30 07:17:52,760: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-10-30 07:17:52,760: 	 Started submission
+DEBUG 2018-10-30 07:17:52,760: 	 Working on /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-30 07:17:54,604: 	 Loading required information from the environment
+DEBUG 2018-10-30 07:17:54,604: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-10-30 07:17:54,604: 	 Loading required information from the environment
+DEBUG 2018-10-30 07:17:54,604: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-10-30 07:17:54,617: 	 UNIQUE NAME: tarUUID 5133e715-0862-49f5-9487-b95e1255a35c 
+DEBUG 2018-10-30 07:17:54,618: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = False
+config.General.workArea = 'crab_projects_ntuples'
+config.General.requestName = 'job_Feb17_ggntuples_TTGamma_DiLept'
+config.section_('JobType')
+config.JobType.psetName = '/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.sendExternalFolder = True
+config.section_('Data')
+config.Data.inputDataset = '/TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM'
+config.Data.publication = False
+config.Data.unitsPerJob = 40
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outLFNDirBase = '/store/user/aldas/2017_gg/TTGamma'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2018-10-30 07:17:54,618: 	 self.config.JobType.psetName: /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py
+INFO 2018-10-30 07:17:54,618: 	 Importing CMSSW configuration /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py
+INFO 2018-10-30 07:17:57,579: 	 Finished importing CMSSW configuration /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/run_mc2017_94X.py
+DEBUG 2018-10-30 07:17:57,579: 	 Writing CMSSW configuration to /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/inputs/PSet.py
+DEBUG 2018-10-30 07:17:58,391: 	 The following EDM output files will be collected: []
+DEBUG 2018-10-30 07:17:58,391: 	 The following TFile output files will be collected: ['TTGammaDiLept_ggtree_mc.root']
+DEBUG 2018-10-30 07:17:58,392: 	 The following user output files will be collected: []
+DEBUG 2018-10-30 07:17:58,392: 	 Loading required information from the environment
+DEBUG 2018-10-30 07:17:58,392: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-10-30 07:17:58,392: 	 Making tarball in /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/inputs/5133e715-0862-49f5-9487-b95e1255a35cdefault.tgz
+DEBUG 2018-10-30 07:17:58,418: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/lib
+DEBUG 2018-10-30 07:17:58,418: 	 Adding directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/lib to tarball
+DEBUG 2018-10-30 07:18:00,718: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/biglib
+DEBUG 2018-10-30 07:18:00,718: 	 Adding directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/biglib to tarball
+DEBUG 2018-10-30 07:18:00,720: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/module
+DEBUG 2018-10-30 07:18:00,720: 	 Checking directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/external
+DEBUG 2018-10-30 07:18:00,720: 	 Adding directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/external to tarball
+DEBUG 2018-10-30 07:18:03,467: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2018-10-30 07:18:03,510: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2018-10-30 07:18:03,567: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoEgamma/EgammaPhotonProducers/interface to tarball
+DEBUG 2018-10-30 07:18:03,611: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/CommonTools/ParticleFlow/interface to tarball
+DEBUG 2018-10-30 07:18:03,684: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/Configuration/PyReleaseValidation/data to tarball
+DEBUG 2018-10-30 07:18:03,746: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/JetMETCorrections/Type1MET/data to tarball
+DEBUG 2018-10-30 07:18:03,753: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/JetMETCorrections/Type1MET/interface to tarball
+DEBUG 2018-10-30 07:18:03,782: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/NanoAOD/interface to tarball
+DEBUG 2018-10-30 07:18:03,811: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/PatAlgos/interface to tarball
+DEBUG 2018-10-30 07:18:03,922: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/PatUtils/data to tarball
+DEBUG 2018-10-30 07:18:04,302: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/PhysicsTools/PatUtils/interface to tarball
+DEBUG 2018-10-30 07:18:04,391: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoMET/METFilters/data to tarball
+DEBUG 2018-10-30 07:18:04,395: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/RecoMET/METFilters/interface to tarball
+DEBUG 2018-10-30 07:18:04,456: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/HiggsAnalysis/HiggsTo2photons/interface to tarball
+DEBUG 2018-10-30 07:18:04,478: 	 Adding data directory /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/interface to tarball
+DEBUG 2018-10-30 07:18:04,760: 	 Uploading archive /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/inputs/5133e715-0862-49f5-9487-b95e1255a35cdefault.tgz (8.416016.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-10-30 07:18:29,413: 	 Loading required information from the environment
+DEBUG 2018-10-30 07:18:29,413: 	 Found CMSSW_9_4_9_cand2 for slc6_amd64_gcc630 with base /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2
+DEBUG 2018-10-30 07:18:29,414: 	 Making tarball in /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/inputs/debugFiles.tgz
+DEBUG 2018-10-30 07:18:29,466: 	 Uploading archive /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-10-30 07:18:31,316: 	 Result uploading input files: a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz 
+INFO 2018-10-30 07:18:31,316: 	 Sending the request to the server
+DEBUG 2018-10-30 07:18:31,316: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 40, 'cachefilename': 'a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_4_9_cand2', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', 'lfn': '/store/user/aldas/2017_gg/TTGamma', 'dryrun': 0, 'workflow': 'crab_job_Feb17_ggntuples_TTGamma_DiLept', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['TTGammaDiLept_ggtree_mc.root'], 'oneEventMode': 0, 'debugfilename': 'b40c8d196c2b90e002bca4cf88f9ba323f7dde1df3534d2f24bc75aba44280fd.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': ''} 
+DEBUG 2018-10-30 07:18:31,317: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=40&cachefilename=a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_4_9_cand2&primarydataset=&inputdata=%2FTTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8%2FRunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Faldas%2F2017_gg%2FTTGamma&dryrun=0&workflow=crab_job_Feb17_ggntuples_TTGamma_DiLept&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=b40c8d196c2b90e002bca4cf88f9ba323f7dde1df3534d2f24bc75aba44280fd.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc630&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=&tfileoutfiles=TTGammaDiLept_ggtree_mc.root
+DEBUG 2018-10-30 07:18:35,740: 	 Result: {u'result': [{u'RequestName': u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept'}]}
+INFO 2018-10-30 07:18:35,743: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-10-30 07:18:35,744: 	 Task name: 181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-30 07:18:35,744: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2018-10-30 07:18:35,744: 	 About to return
+DEBUG 2018-10-30 07:29:53,731: 	 Executing command: 'status'
+DEBUG 2018-10-30 07:29:53,731: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-30 07:29:53,741: 	 Checking credentials
+DEBUG 2018-10-30 07:29:53,742: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-30 07:29:53,742: 	 Getting proxy life time left
+DEBUG 2018-10-30 07:29:53,845: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 28518
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:53,950: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 28517
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:53,950: 	 Proxy valid for 07:55:18 hours
+DEBUG 2018-10-30 07:29:54,063: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:54,063: 	 Checking credentials
+DEBUG 2018-10-30 07:29:54,063: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-30 07:29:54,063: 	 Getting proxy life time left
+DEBUG 2018-10-30 07:29:54,167: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 28517
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:54,271: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 28516
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:54,271: 	 Proxy valid for 07:55:17 hours
+DEBUG 2018-10-30 07:29:55,739: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-10-30 07:29:55,846: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:55,846: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-10-30 07:29:55,846: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-10-30 07:29:56,751: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 689:20:12  (28.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-30 07:29:56,753: 	 Myproxy is valid: 2481612
+DEBUG 2018-10-30 07:29:56,753: 	 Command use: status
+DEBUG 2018-10-30 07:29:56,753: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept']
+DEBUG 2018-10-30 07:29:58,630: 	 CRABClient version: 3.3.1809
+DEBUG 2018-10-30 07:29:58,631: 	 Instance is prod
+DEBUG 2018-10-30 07:29:58,631: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-10-30 07:29:58,631: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-10-30 07:30:00,364: 	 Got information from server oracle database: {u'result': [u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-10-30 12:18:35.679104', u'None', u'2018-10-30 12:19:09.215592', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 40, 'runs': [], 'lumis': []}", u'a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_TTGamma_DiLept-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['TTGammaDiLept_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0198.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8', u'None', u'b40c8d196c2b90e002bca4cf88f9ba323f7dde1df3534d2f24bc75aba44280fd.tar.gz', u'27917288', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-10-30 07:30:00,364: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-30 07:30:00,365: 	 Task name:			181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-30 07:30:00,365: 	 Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+INFO 2018-10-30 07:30:00,365: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-10-30 07:30:00,365: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-30 07:30:00,365: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-30 07:30:00,365: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 27917288)
+DEBUG 2018-10-30 07:30:00,365: 	 Webdir is located at http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-30 07:30:02,082: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-30 07:30:02,082: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept/status_cache
+DEBUG 2018-10-30 07:30:07,830: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 244.62927889823914], 'StartTimes': [1540902081.0], 'SubmitTimes': [1540901960.0], 'JobIds': ['27917293.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [3136], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [0.0]}, '2': {'Retries': 0, 'WallDurations': [8.0, 246.62927889823914], 'StartTimes': [1540902079.0], 'SubmitTimes': [1540901960.0], 'JobIds': ['27917294.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1800], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_US_Vanderbilt'], 'TotalSysCpuTimeHistory': [0.0]}}
+INFO 2018-10-30 07:30:07,830: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-10-30 07:30:07,830: 	 
+Jobs status:                    running       		 100.0% (2/2)
+INFO 2018-10-30 07:30:07,830: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-10-30 07:30:07,854: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/crab.log
+DEBUG 2018-10-31 05:19:48,408: 	 Executing command: 'resubmit'
+DEBUG 2018-10-31 05:19:48,408: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-31 05:19:48,492: 	 Checking credentials
+DEBUG 2018-10-31 05:19:48,492: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-31 05:19:48,492: 	 Getting proxy life time left
+DEBUG 2018-10-31 05:19:48,595: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 30565
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:48,698: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 30564
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:48,698: 	 Proxy valid for 08:29:25 hours
+DEBUG 2018-10-31 05:19:48,809: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:48,810: 	 Checking credentials
+DEBUG 2018-10-31 05:19:48,810: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-31 05:19:48,810: 	 Getting proxy life time left
+DEBUG 2018-10-31 05:19:48,912: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 30565
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:49,015: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 30564
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:49,015: 	 Proxy valid for 08:29:25 hours
+DEBUG 2018-10-31 05:19:50,698: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-10-31 05:19:50,806: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:50,806: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-10-31 05:19:50,806: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-10-31 05:19:51,711: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 667:30:17  (27.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:51,712: 	 Myproxy is valid: 2403017
+DEBUG 2018-10-31 05:19:51,712: 	 Command use: resubmit
+DEBUG 2018-10-31 05:19:51,712: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept']
+DEBUG 2018-10-31 05:19:53,304: 	 CRABClient version: 3.3.1809
+DEBUG 2018-10-31 05:19:53,304: 	 Instance is prod
+DEBUG 2018-10-31 05:19:53,304: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-10-31 05:19:53,305: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-10-31 05:19:53,305: 	 Executing command: 'status'
+DEBUG 2018-10-31 05:19:53,305: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-10-31 05:19:53,315: 	 Checking credentials
+DEBUG 2018-10-31 05:19:53,315: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-31 05:19:53,315: 	 Getting proxy life time left
+DEBUG 2018-10-31 05:19:53,418: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 30560
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:53,523: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 30559
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:53,523: 	 Proxy valid for 08:29:20 hours
+DEBUG 2018-10-31 05:19:53,636: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:53,636: 	 Checking credentials
+DEBUG 2018-10-31 05:19:53,636: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-10-31 05:19:53,636: 	 Getting proxy life time left
+DEBUG 2018-10-31 05:19:53,740: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 30560
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:53,844: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 30559
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:53,844: 	 Proxy valid for 08:29:20 hours
+DEBUG 2018-10-31 05:19:55,400: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-10-31 05:19:55,509: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:55,509: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-10-31 05:19:55,509: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-10-31 05:19:56,214: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 667:30:12  (27.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-10-31 05:19:56,215: 	 Myproxy is valid: 2403012
+DEBUG 2018-10-31 05:19:56,215: 	 Command use: status
+DEBUG 2018-10-31 05:19:56,215: 	 Options use: []
+DEBUG 2018-10-31 05:19:58,103: 	 CRABClient version: 3.3.1809
+DEBUG 2018-10-31 05:19:58,103: 	 Instance is prod
+DEBUG 2018-10-31 05:19:58,103: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-10-31 05:19:58,103: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-10-31 05:19:59,608: 	 Got information from server oracle database: {u'result': [u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-10-30 12:18:35.679104', u'None', u'2018-10-30 12:19:09.215592', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 40, 'runs': [], 'lumis': []}", u'a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_TTGamma_DiLept-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['TTGammaDiLept_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0198.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8', u'None', u'b40c8d196c2b90e002bca4cf88f9ba323f7dde1df3534d2f24bc75aba44280fd.tar.gz', u'27917288', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-10-31 05:19:59,609: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-31 05:19:59,609: 	 Task name:			181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-31 05:19:59,611: 	 Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+INFO 2018-10-31 05:19:59,611: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-10-31 05:19:59,611: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-31 05:19:59,611: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-31 05:19:59,612: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 27917288)
+DEBUG 2018-10-31 05:19:59,612: 	 Webdir is located at http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-31 05:20:01,377: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-10-31 05:20:01,377: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept/status_cache
+DEBUG 2018-10-31 05:20:03,066: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 41480.0], 'StartTimes': [1540902081.0], 'SubmitTimes': [1540901960.0], 'JobIds': ['27917293.0'], 'EndTimes': [1540943561.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1170848], 'TotalUserCpuTimeHistory': [37053], 'SiteHistory': ['Unknown', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [783]}, '2': {'Retries': 0, 'WallDurations': [8.0, 15033.0], 'StartTimes': [1540902079.0], 'SubmitTimes': [1540901960.0], 'JobIds': ['27917294.0'], 'TotalUserCpuTimeHistory': [27379.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1255456], 'Error': [50664, 'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}], 'SiteHistory': ['Unknown', 'T2_US_Vanderbilt'], 'TotalSysCpuTimeHistory': [934.0]}}
+INFO 2018-10-31 05:20:03,066: 	 Status on the scheduler:	FAILED
+INFO 2018-10-31 05:20:03,066: 	 
+Jobs status:                    failed        		  50.0% (1/2)
+INFO 2018-10-31 05:20:03,066: 	 				finished       50.0% (1/2)
+INFO 2018-10-31 05:20:03,066: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-10-31 05:20:03,066: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 50664
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-10-31 05:20:03,066: 	 
+Summary of run jobs:
+ * Memory: 1143MB min, 1226MB max, 1185MB ave
+ * Runtime: 4:10:33 min, 11:31:20 max, 7:50:56 ave
+ * CPU eff: 91% min, 188% max, 117% ave
+ * Waste: 0:00:16 (0% of total)
+
+DEBUG 2018-10-31 05:20:03,100: 	 Requesting resubmission of failed jobs in task 181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-10-31 05:20:03,100: 	 Sending resubmit request to the server.
+DEBUG 2018-10-31 05:20:03,100: 	 Submitting {'publication': 0, 'jobids': ['2'], 'subresource': 'resubmit2', 'workflow': u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept'} 
+DEBUG 2018-10-31 05:20:03,100: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept&jobids=2
+DEBUG 2018-10-31 05:20:04,846: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-10-31 05:20:04,846: 	 Resubmit request sent to the server.
+INFO 2018-10-31 05:20:04,846: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-10-31 05:20:04,850: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/crab.log
+DEBUG 2018-11-01 14:19:50,098: 	 Executing command: 'resubmit'
+DEBUG 2018-11-01 14:19:50,106: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-01 14:19:50,163: 	 Checking credentials
+DEBUG 2018-11-01 14:19:50,163: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-01 14:19:50,163: 	 Getting proxy life time left
+DEBUG 2018-11-01 14:19:50,265: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 42451
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:50,368: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 42451
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:50,369: 	 Proxy valid for 11:47:31 hours
+DEBUG 2018-11-01 14:19:50,552: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:50,553: 	 Checking credentials
+DEBUG 2018-11-01 14:19:50,553: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-01 14:19:50,553: 	 Getting proxy life time left
+DEBUG 2018-11-01 14:19:50,655: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 42451
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:50,758: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 42451
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:50,758: 	 Proxy valid for 11:47:31 hours
+DEBUG 2018-11-01 14:19:52,289: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-01 14:19:52,395: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:52,395: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-01 14:19:52,395: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-01 14:19:53,400: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 634:30:15  (26.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:53,401: 	 Myproxy is valid: 2284215
+DEBUG 2018-11-01 14:19:53,401: 	 Command use: resubmit
+DEBUG 2018-11-01 14:19:53,401: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept']
+DEBUG 2018-11-01 14:19:54,891: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-01 14:19:54,892: 	 Instance is prod
+DEBUG 2018-11-01 14:19:54,892: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-01 14:19:54,892: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-01 14:19:54,892: 	 Executing command: 'status'
+DEBUG 2018-11-01 14:19:54,896: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-01 14:19:54,913: 	 Checking credentials
+DEBUG 2018-11-01 14:19:54,913: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-01 14:19:54,913: 	 Getting proxy life time left
+DEBUG 2018-11-01 14:19:55,016: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 42447
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:55,118: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 42446
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:55,119: 	 Proxy valid for 11:47:27 hours
+DEBUG 2018-11-01 14:19:55,261: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:55,261: 	 Checking credentials
+DEBUG 2018-11-01 14:19:55,261: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-01 14:19:55,261: 	 Getting proxy life time left
+DEBUG 2018-11-01 14:19:55,364: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 42446
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:55,466: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 42446
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:55,467: 	 Proxy valid for 11:47:26 hours
+DEBUG 2018-11-01 14:19:56,965: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-01 14:19:57,071: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:57,071: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-01 14:19:57,071: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-01 14:19:57,975: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 634:30:11  (26.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-01 14:19:57,976: 	 Myproxy is valid: 2284211
+DEBUG 2018-11-01 14:19:57,976: 	 Command use: status
+DEBUG 2018-11-01 14:19:57,976: 	 Options use: []
+DEBUG 2018-11-01 14:19:59,486: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-01 14:19:59,486: 	 Instance is prod
+DEBUG 2018-11-01 14:19:59,486: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-01 14:19:59,486: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-01 14:20:01,012: 	 Got information from server oracle database: {u'result': [u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'None', u'SUBMITTED', u'None', u'2018-10-30 12:18:35.679104', u'None', u'2018-10-30 12:19:09.215592', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 40, 'runs': [], 'lumis': []}", u'a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_TTGamma_DiLept-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['TTGammaDiLept_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['2'], 'numcores': 1, 'site_whitelist': [], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0198.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8', u'None', u'b40c8d196c2b90e002bca4cf88f9ba323f7dde1df3534d2f24bc75aba44280fd.tar.gz', u'27917288', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-11-01 14:20:01,012: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-01 14:20:01,012: 	 Task name:			181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-01 14:20:01,014: 	 Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+INFO 2018-11-01 14:20:01,014: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-11-01 14:20:01,014: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-01 14:20:01,014: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-11-01 14:20:01,014: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 27917288)
+DEBUG 2018-11-01 14:20:01,014: 	 Webdir is located at http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-11-01 14:20:02,591: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-11-01 14:20:02,591: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept/status_cache
+DEBUG 2018-11-01 14:20:09,212: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 41480.0], 'StartTimes': [1540902081.0], 'SubmitTimes': [1540901960.0], 'JobIds': ['27917293.0'], 'EndTimes': [1540943561.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1170848], 'TotalUserCpuTimeHistory': [37053], 'SiteHistory': ['Unknown', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [783]}, '2': {'Retries': 1, 'WallDurations': [8.0, 15033.0, 9.0, 73356.0], 'StartTimes': [1540902079.0, 1540981361.0], 'SubmitTimes': [1540901960.0, 1540981239.0], 'JobIds': ['27917294.0', '27974365.0'], 'TotalUserCpuTimeHistory': [27379.0, 60765.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1255456, 1261612], 'Error': [50664, 'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}], 'SiteHistory': ['Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_TR_METU'], 'TotalSysCpuTimeHistory': [934.0, 1236.0]}}
+INFO 2018-11-01 14:20:09,212: 	 Status on the scheduler:	FAILED
+INFO 2018-11-01 14:20:09,212: 	 
+Jobs status:                    failed        		  50.0% (1/2)
+INFO 2018-11-01 14:20:09,212: 	 				finished       50.0% (1/2)
+INFO 2018-11-01 14:20:09,212: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-11-01 14:20:09,212: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 50664
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-11-01 14:20:09,212: 	 
+Summary of run jobs:
+ * Memory: 1143MB min, 1232MB max, 1188MB ave
+ * Runtime: 11:31:20 min, 20:22:36 max, 15:56:58 ave
+ * CPU eff: 85% min, 91% max, 87% ave
+ * Waste: 4:10:58 (12% of total)
+
+DEBUG 2018-11-01 14:20:09,256: 	 Requesting resubmission of failed jobs in task 181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-01 14:20:09,256: 	 Sending resubmit request to the server.
+DEBUG 2018-11-01 14:20:09,257: 	 Submitting {'publication': 0, 'jobids': ['2'], 'subresource': 'resubmit2', 'workflow': u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept'} 
+DEBUG 2018-11-01 14:20:09,257: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept&jobids=2
+DEBUG 2018-11-01 14:20:10,800: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-11-01 14:20:10,800: 	 Resubmit request sent to the server.
+INFO 2018-11-01 14:20:10,800: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-11-01 14:20:10,806: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/crab.log
+DEBUG 2018-11-02 14:23:56,500: 	 Executing command: 'resubmit'
+DEBUG 2018-11-02 14:23:56,501: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-02 14:23:56,527: 	 Checking credentials
+DEBUG 2018-11-02 14:23:56,527: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-02 14:23:56,527: 	 Getting proxy life time left
+DEBUG 2018-11-02 14:23:56,630: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 43151
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:56,733: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 43151
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:56,733: 	 Proxy valid for 11:59:11 hours
+DEBUG 2018-11-02 14:23:56,844: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:56,844: 	 Checking credentials
+DEBUG 2018-11-02 14:23:56,844: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-02 14:23:56,844: 	 Getting proxy life time left
+DEBUG 2018-11-02 14:23:56,947: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 43151
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:57,050: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 43150
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:57,050: 	 Proxy valid for 11:59:11 hours
+DEBUG 2018-11-02 14:23:58,614: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-02 14:23:58,723: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:58,723: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-02 14:23:58,723: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-02 14:23:59,628: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 610:26:09  (25.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:23:59,629: 	 Myproxy is valid: 2197569
+DEBUG 2018-11-02 14:23:59,629: 	 Command use: resubmit
+DEBUG 2018-11-02 14:23:59,629: 	 Options use: ['-d', 'crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/']
+DEBUG 2018-11-02 14:24:01,152: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-02 14:24:01,152: 	 Instance is prod
+DEBUG 2018-11-02 14:24:01,152: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-02 14:24:01,152: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-02 14:24:01,152: 	 Executing command: 'status'
+DEBUG 2018-11-02 14:24:01,153: 	 Found CRAB cache file /uscms/home/aldas/.crab3
+DEBUG 2018-11-02 14:24:01,162: 	 Checking credentials
+DEBUG 2018-11-02 14:24:01,163: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-02 14:24:01,163: 	 Getting proxy life time left
+DEBUG 2018-11-02 14:24:01,266: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 43146
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:01,370: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 43146
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:01,370: 	 Proxy valid for 11:59:06 hours
+DEBUG 2018-11-02 14:24:01,484: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:01,484: 	 Checking credentials
+DEBUG 2018-11-02 14:24:01,484: 	 Found proxy file /tmp/x509up_u54554
+DEBUG 2018-11-02 14:24:01,484: 	 Getting proxy life time left
+DEBUG 2018-11-02 14:24:01,588: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -timeleft
+ output : 43146
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:01,692: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u54554 -actimeleft
+ output : 43146
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:01,692: 	 Proxy valid for 11:59:06 hours
+DEBUG 2018-11-02 14:24:07,537: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-11-02 14:24:07,644: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:07,644: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-11-02 14:24:07,644: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das_cmsweb.cern.ch for credential name
+DEBUG 2018-11-02 14:24:08,548: 	 Executing : 
+ command : myproxy-info -l 6609876d44ee4c230baae8353236dcddc3688d84 -s myproxy.cern.ch
+ output : username: 6609876d44ee4c230baae8353236dcddc3688d84
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|031|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 610:26:00  (25.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-11-02 14:24:08,548: 	 Myproxy is valid: 2197560
+DEBUG 2018-11-02 14:24:08,549: 	 Command use: status
+DEBUG 2018-11-02 14:24:08,549: 	 Options use: []
+DEBUG 2018-11-02 14:24:10,087: 	 CRABClient version: 3.3.1809
+DEBUG 2018-11-02 14:24:10,087: 	 Instance is prod
+DEBUG 2018-11-02 14:24:10,087: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-11-02 14:24:10,087: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-11-02 14:24:11,892: 	 Got information from server oracle database: {u'result': [u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'None', u'SUBMITTED', u'None', u'2018-10-30 12:18:35.679104', u'None', u'2018-10-30 12:19:09.215592', u'None', u'CMSSW_9_4_9_cand2', u'slc6_amd64_gcc630', u'/TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 40, 'runs': [], 'lumis': []}", u'a04c9c9a4d659b573ed12cc1c934bcdc3145ea59c9271046b23e602edf38ca8b.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'aldas', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=aldas/CN=823740/CN=Aloke Kumar Das', u'cms', u'None', u'None', u'crab_job_Feb17_ggntuples_TTGamma_DiLept-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['TTGammaDiLept_ggtree_mc.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['2'], 'numcores': 1, 'site_whitelist': [], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0198.cern.ch', u'F', u'[]', u'T', u'/store/user/aldas/2017_gg/TTGamma', u'F', u'None', u'F', u'None', u'TTGamma_Dilept_TuneCP5_PSweights_13TeV_madgraph_pythia8', u'None', u'b40c8d196c2b90e002bca4cf88f9ba323f7dde1df3534d2f24bc75aba44280fd.tar.gz', u'27917288', u'filetransfers', u'F', u'131.225.190.108', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2018-11-02 14:24:11,893: 	 CRAB project directory:		/uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-02 14:24:11,893: 	 Task name:			181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-02 14:24:11,895: 	 Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+INFO 2018-11-02 14:24:11,896: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-11-02 14:24:11,896: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-02 14:24:11,896: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=aldas&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-11-02 14:24:11,896: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 27917288)
+DEBUG 2018-11-02 14:24:11,896: 	 Webdir is located at http://vocms0198.cern.ch/mon/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-11-02 14:24:13,391: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+DEBUG 2018-11-02 14:24:13,391: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0198/cms1693/181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept/status_cache
+DEBUG 2018-11-02 14:24:15,215: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 41480.0], 'StartTimes': [1540902081.0], 'SubmitTimes': [1540901960.0], 'JobIds': ['27917293.0'], 'EndTimes': [1540943561.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1170848], 'TotalUserCpuTimeHistory': [37053], 'SiteHistory': ['Unknown', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [783]}, '2': {'Retries': 2, 'WallDurations': [8.0, 15033.0, 9.0, 73356.0, 10.0, 67941.0], 'StartTimes': [1540902079.0, 1540981361.0, 1541100182.0], 'SubmitTimes': [1540901960.0, 1540981239.0, 1541100050.0], 'JobIds': ['27917294.0', '27974365.0', '28055970.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1255456, 1261612, 1173124], 'Error': [50664, 'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}], 'TotalUserCpuTimeHistory': [27379.0, 60765.0, 35833.0], 'SiteHistory': ['Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_TR_METU', 'Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [934.0, 1236.0, 752.0]}}
+INFO 2018-11-02 14:24:15,216: 	 Status on the scheduler:	FAILED
+INFO 2018-11-02 14:24:15,216: 	 
+Jobs status:                    failed        		  50.0% (1/2)
+INFO 2018-11-02 14:24:15,216: 	 				finished       50.0% (1/2)
+INFO 2018-11-02 14:24:15,216: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-11-02 14:24:15,216: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 50664
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-11-02 14:24:15,216: 	 
+Summary of run jobs:
+ * Memory: 1143MB min, 1145MB max, 1145MB ave
+ * Runtime: 11:31:20 min, 18:52:21 max, 15:11:50 ave
+ * CPU eff: 54% min, 91% max, 68% ave
+ * Waste: 24:33:44 (45% of total)
+
+DEBUG 2018-11-02 14:24:15,277: 	 Requesting resubmission of failed jobs in task 181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept
+INFO 2018-11-02 14:24:15,277: 	 Sending resubmit request to the server.
+DEBUG 2018-11-02 14:24:15,277: 	 Submitting {'publication': 0, 'jobids': ['2'], 'subresource': 'resubmit2', 'workflow': u'181030_121835:aldas_crab_job_Feb17_ggntuples_TTGamma_DiLept'} 
+DEBUG 2018-11-02 14:24:15,277: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=181030_121835%3Aaldas_crab_job_Feb17_ggntuples_TTGamma_DiLept&jobids=2
+DEBUG 2018-11-02 14:24:17,214: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-11-02 14:24:17,214: 	 Resubmit request sent to the server.
+INFO 2018-11-02 14:24:17,215: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-11-02 14:24:17,221: 	 Log file is /uscms_data/d3/aldas/ggntuple/CMSSW_9_4_9_cand2/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_job_Feb17_ggntuples_TTGamma_DiLept/crab.log

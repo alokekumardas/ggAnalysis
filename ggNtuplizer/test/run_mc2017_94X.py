@@ -14,13 +14,16 @@ from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, '94X_mc2017_realistic_v12')
 
 #process.Tracer = cms.Service("Tracer")
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1000) )
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
 process.MessageLogger.cerr.FwkReport.reportEvery = 1000
 
 process.source = cms.Source("PoolSource",
                             fileNames = cms.untracked.vstring(
-        'file:/data4/cmkuo/testfiles/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_RunIIFall17MiniAODv2.root'
-        ))
+       # 'file:/data4/cmkuo/testfiles/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_RunIIFall17MiniAODv2.root'
+      # 'root://cmsxrootd.fnal.gov///store/mc/RunIIFall17MiniAODv2/TTGamma_SingleLeptFromT_TuneCP5_PSweights_13TeV_madgraph_pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/90000/E6DE06CF-6E43-E811-9185-A0369FE2C026.root'
+        #'root://cmsxrootd.fnal.gov///store/mc/RunIIFall17MiniAODv2/TTGamma_SingleLeptFromT_TuneCP5_PSweights_13TeV_madgraph_pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/00000/2CC75881-F142-E811-97DF-A0369FE2C026.root'
+        'root://cmsxrootd.fnal.gov///store/mc/RunIIFall17MiniAODv2/ZZ_TuneCP5_13TeV-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/24425FAA-C341-E811-8371-008CFAC93EFC.root' 
+       ))
 
 #process.load("PhysicsTools.PatAlgos.patSequences_cff")
 
@@ -33,7 +36,7 @@ setupEgammaPostRecoSeq(process,
                        runVID=False, 
                        era='2017-Nov17ReReco')  
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string('ggtree_mc.root'))
+process.TFileService = cms.Service("TFileService", fileName = cms.string('QCD_EM6_ggtree_mc.root'))
 
 # MET correction and uncertainties
 from PhysicsTools.PatUtils.tools.runMETCorrectionsAndUncertainties import runMetCorAndUncFromMiniAOD
